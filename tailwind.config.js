@@ -6,6 +6,9 @@ module.exports = {
       backgroundImage: {
         'style': "url('~/assets/imgs/style.jpg')",
         'new-style': "url('~/assets/imgs/new-style.jpg')",
+      },
+      screens: {
+        'xs': '320px'
       }
     },
   },

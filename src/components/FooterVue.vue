@@ -16,7 +16,7 @@ onMounted(() => {
 <template>
   <div class="footer">
     <h1 class="sm:text-xl text-lg font-bold">FOLLOW ALONG WITH US</h1>
-    <div class="socials space-x-5">
+    <div class="socials">
       <NuxtLink :to="path">
         <font-awesome-icon icon="fa-brands fa-facebook-f" size="2xl" />
       </NuxtLink>
@@ -28,8 +28,7 @@ onMounted(() => {
       </NuxtLink>
     </div>
     <p class="my-0 mx-[15vw] sm:text-base text-sm">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ducimus
-      possimus ipsa quidem laboriosam deserunt maiores, id perferendis.
+      Lorem ipsum dolor ametconsectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
     </p>
   </div>
 </template>

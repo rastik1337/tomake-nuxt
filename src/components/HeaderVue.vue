@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <h1 class="sm:text-4xl text-2xl">LOGO</h1>
-    <div class="sm:grow grow-[0.5]"></div>
+    <div class="sm:grow xs:grow-[0.5]"></div>
     <div class="flex flex-col sm:flex-row sm:space-x-4 items-center sm:text-base text-sm">
       <NuxtLink to="/" active-class="active-link-nuxt">First</NuxtLink>
       <NuxtLink to="/second" active-class="active-link-nuxt">Second</NuxtLink>
