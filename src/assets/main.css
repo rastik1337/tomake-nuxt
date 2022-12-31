@@ -37,7 +37,8 @@
     @apply text-gray-800 text-center sm:text-base text-xs lg:mx-24 sm:mx-10 mx-4 my-5;
   }
   .btn-buy {
-    @apply bg-[#313131] text-white sm:text-2xl font-semibold border-none text-[0.6rem] px-5 py-3 mb-10;
+    @apply bg-[#313131] text-white sm:text-2xl font-semibold border-none text-[0.6rem] 
+     xl:px-16 lg:px-14 sm:px-12 px-5 py-3 mb-10;
   }
 }
 @layer utilities {
