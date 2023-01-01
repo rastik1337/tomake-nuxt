@@ -1,5 +1,5 @@
 <template>
   <HeaderVue />
-  <firstPage />
+  <FirstPage />
   <FooterVue />
 </template>

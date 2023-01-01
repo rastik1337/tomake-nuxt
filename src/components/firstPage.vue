@@ -5,7 +5,7 @@
     </div>
 
     <div class="second">
-      <h1>UP TO <span>50%</span>OFF</h1>
+      <h1>UP TO 50%OFF</h1>
       <p>
         Lorem ipsum dolor ametconsectetuer adipiscing elit, sed diam nonummy
         nibh euismod tincidunt ut laoreet dolore
