@@ -1,5 +1,5 @@
 <template>
   <HeaderVue />
-  <div class="main"></div>
+  <ThirdPage />
   <FooterVue />
 </template>
