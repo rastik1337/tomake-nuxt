@@ -28,7 +28,8 @@ onMounted(() => {
       </NuxtLink>
     </div>
     <p class="my-0 mx-[15vw] sm:text-base text-sm">
-      Lorem ipsum dolor ametconsectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+      Lorem ipsum dolor ametconsectetuer adipiscing elit, sed diam nonummy nibh
+      euismod tincidunt ut laoreet dolore
     </p>
   </div>
 </template>

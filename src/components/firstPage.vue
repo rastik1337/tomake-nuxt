@@ -12,7 +12,7 @@
       </p>
       <button class="btn">SHOP NOW</button>
     </div>
-    
+
     <div class="third">
       <div class="third-img"></div>
       <div class="third-menu">

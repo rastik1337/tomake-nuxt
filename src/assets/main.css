@@ -176,7 +176,7 @@
   }
   .seventh-card-menu button {
     @apply bg-[#313131] border-none text-white
-     xl:text-xl lg:text-base xs:text-sm text-xs py-2 px-4 mb-5;
+     xl:text-xl lg:text-base xs:text-sm text-xs sm:py-3 py-2 sm:px-16 px-8 mb-5;
   }
   .reverse .seventh-card-menu button {
     @apply bg-white text-black;
