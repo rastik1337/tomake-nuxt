@@ -1,14 +1,15 @@
 <script lang="ts" setup>
-import { library } from "@fortawesome/fontawesome-svg-core";
+import { library } from '@fortawesome/fontawesome-svg-core';
 import {
   faFacebookF,
   faInstagram,
   faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
-import { ref } from "vue";
+} from '@fortawesome/free-brands-svg-icons';
+import { ref } from 'vue';
 
 library.add(faFacebookF, faInstagram, faTwitter);
-const path = ref("");
+let x
+const path = ref('');
 onMounted(() => {
   path.value = window.location.pathname;
 });
