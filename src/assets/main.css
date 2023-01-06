@@ -5,148 +5,148 @@
 @tailwind components;
 @tailwind utilities;
 @layer base {
-  h1,
-  button {
-    font-family: 'Josefin Sans', sans-serif;
-  }
+    h1,
+    button {
+        font-family: 'Josefin Sans', sans-serif;
+    }
 }
 
 @layer components {
-  .footer {
-    @apply flex flex-col justify-center items-center text-center text-gray-800 mx-[5vh] my-[5vh];
-  }
-  .socials {
-    @apply flex xs:flex-row flex-col my-5 xs:space-x-5 xs:space-y-0 space-y-2;
-  }
-  .header {
-    @apply flex flex-col sm:my-10 my-2 
+    .footer {
+        @apply flex flex-col justify-center items-center text-center text-gray-800 mx-[5vh] my-[5vh];
+    }
+    .socials {
+        @apply flex xs:flex-row flex-col my-5 xs:space-x-5 xs:space-y-0 space-y-2;
+    }
+    .header {
+        @apply flex flex-col sm:my-10 my-2 
      justify-center items-center sm:items-baseline py-10 px-[10%] h-[10vh] bg-white text-black xs:flex-row sm:flex-row;
-  }
-  .first {
-    @apply flex items-center justify-center bg-style bg-no-repeat 
+    }
+    .first {
+        @apply flex items-center justify-center bg-style bg-no-repeat 
      bg-[position:center_80%] bg-cover grayscale 2xl:py-[20%] py-[30%];
-  }
-  .second {
-    @apply flex flex-col items-center justify-center bg-[#f0f0f0];
-  }
-  .third {
-    @apply flex;
-  }
-  .third-img {
-    @apply xl:w-[70%] xs:w-2/3 w-1/2 bg-new-style bg-no-repeat bg-cover
+    }
+    .second {
+        @apply flex flex-col items-center justify-center bg-[#f0f0f0];
+    }
+    .third {
+        @apply flex;
+    }
+    .third-img {
+        @apply xl:w-[70%] xs:w-2/3 w-1/2 bg-new-style bg-no-repeat bg-cover
      xl:bg-[position:center_10%] lg:bg-[position:center_20%] bg-[position:center_50%] grayscale-[50%]
      py-[20%];
-  }
-  .third-menu {
-    @apply xl:w-[30%] xs:w-1/3 w-1/2 bg-[#fd9903] flex flex-col items-center justify-center;
-  }
-  .btn-buy {
-    @apply bg-[#313131] text-white md:text-2xl sm:text-xl border-none text-[0.6rem] 
+    }
+    .third-menu {
+        @apply xl:w-[30%] xs:w-1/3 w-1/2 bg-[#fd9903] flex flex-col items-center justify-center;
+    }
+    .btn-buy {
+        @apply bg-[#313131] text-white md:text-2xl sm:text-xl border-none text-[0.6rem] 
      xl:px-16 lg:px-14 sm:px-12 px-5 py-3 mb-10;
-  }
-  .fourth {
-    @apply flex;
-  }
-  .fourth-menu {
-    @apply flex flex-col xs:w-1/3 w-1/4 bg-[#fd9903] justify-center items-end;
-  }
-  .fourth-menu-grp {
-    @apply relative 
+    }
+    .fourth {
+        @apply flex;
+    }
+    .fourth-menu {
+        @apply flex flex-col xs:w-1/3 w-1/4 bg-[#fd9903] justify-center items-end;
+    }
+    .fourth-menu-grp {
+        @apply relative 
      2xl:left-[10.5rem] xl:left-[7.9rem] lg:left-[6rem]
      md:left-[5rem] sm:left-[4rem] xs:left-[2.5rem] left-[1.3rem];
-  }
-  .fourth-img {
-    @apply xs:w-2/3 w-3/4 bg-new-season bg-cover bg-no-repeat 
+    }
+    .fourth-img {
+        @apply xs:w-2/3 w-3/4 bg-new-season bg-cover bg-no-repeat 
      2xl:py-[20%] py-[30%] xs:bg-[position:center_0%] bg-[position:center_50%];
-  }
-  .fifth {
-    @apply flex sm:flex-nowrap flex-wrap bg-[#f0f0f0] items-center justify-center;
-  }
-  .fifth-card {
-    @apply lg:m-10 md:m-6 sm:m-2 sm:my-10 xs:mx-2 my-10 m-2 flex flex-col;
-  }
-  .fifth-card-img {
-    @apply bg-cover bg-no-repeat xl:bg-[position:center] bg-[position:top_center]
+    }
+    .fifth {
+        @apply flex sm:flex-nowrap flex-wrap bg-[#f0f0f0] items-center justify-center;
+    }
+    .fifth-card {
+        @apply lg:m-10 md:m-6 sm:m-2 sm:my-10 xs:mx-2 my-10 m-2 flex flex-col;
+    }
+    .fifth-card-img {
+        @apply bg-cover bg-no-repeat xl:bg-[position:center] bg-[position:top_center]
      xl:h-[30vw] sm:h-[30vw] xs:h-[70vw] lg:mx-2 md:mx-6 sm:mx-6 xs:mx-16 mx-14 h-[80vw] w-[auto];
-  }
-  .fifth-card-img-1 {
-    @apply bg-card-1 fifth-card-img xl:bg-[position:80%_center] bg-[position:80%_top];
-  }
-  .fifth-card-img-2 {
-    @apply bg-card-2 fifth-card-img;
-  }
-  .fifth-card-img-3 {
-    @apply bg-card-3 fifth-card-img;
-  }
-  .sixth {
-    @apply flex;
-  }
-  .sixth-menu {
-    @apply w-2/3 flex flex-col bg-[#313131] justify-center items-center;
-  }
-  .sixth-img {
-    @apply w-1/3  bg-fashion bg-[position:center_top_25%] bg-cover bg-no-repeat 
+    }
+    .fifth-card-img-1 {
+        @apply bg-card-1 fifth-card-img xl:bg-[position:80%_center] bg-[position:80%_top];
+    }
+    .fifth-card-img-2 {
+        @apply bg-card-2 fifth-card-img;
+    }
+    .fifth-card-img-3 {
+        @apply bg-card-3 fifth-card-img;
+    }
+    .sixth {
+        @apply flex;
+    }
+    .sixth-menu {
+        @apply w-2/3 flex flex-col bg-[#313131] justify-center items-center;
+    }
+    .sixth-img {
+        @apply w-1/3  bg-fashion bg-[position:center_top_25%] bg-cover bg-no-repeat 
     2xl:py-[20%] py-[30%];
-  }
-  .seventh {
-    @apply flex flex-col items-center justify-center bg-[#f0f0f0];
-  }
-  .seventh-card {
-    @apply flex my-5 bg-white mx-5;
-  }
-  .seventh-card-menu {
-    @apply w-1/2 flex items-center justify-center p-[6%];
-  }
-  .seventh-card-menu {
-    @apply flex flex-col items-center justify-center;
-  }
-  .seventh-card-img {
-    @apply bg-cover bg-no-repeat w-1/2;
-  }
-  .seventh-card-img-1 {
-    @apply seventh-card-img bg-fashion-card-1 bg-[position:center_top_30%];
-  }
-  .seventh-card-img-2 {
-    @apply seventh-card-img bg-fashion-card-2 bg-[position:top];
-  }
-  .seventh-card-img-3 {
-    @apply seventh-card-img bg-fashion-card-3 bg-[position:top];
-  }
-  .reverse {
-    @apply flex-row-reverse bg-[#f19a29] text-white;
-  }
+    }
+    .seventh {
+        @apply flex flex-col items-center justify-center bg-[#f0f0f0];
+    }
+    .seventh-card {
+        @apply flex my-5 bg-white mx-5;
+    }
+    .seventh-card-menu {
+        @apply w-1/2 flex items-center justify-center p-[6%];
+    }
+    .seventh-card-menu {
+        @apply flex flex-col items-center justify-center;
+    }
+    .seventh-card-img {
+        @apply bg-cover bg-no-repeat w-1/2;
+    }
+    .seventh-card-img-1 {
+        @apply seventh-card-img bg-fashion-card-1 bg-[position:center_top_30%];
+    }
+    .seventh-card-img-2 {
+        @apply seventh-card-img bg-fashion-card-2 bg-[position:top];
+    }
+    .seventh-card-img-3 {
+        @apply seventh-card-img bg-fashion-card-3 bg-[position:top];
+    }
+    .reverse {
+        @apply flex-row-reverse bg-[#f19a29] text-white;
+    }
 }
 
 @layer utilities {
-  .socials svg {
-    @apply text-white bg-[#f19a29] rounded-3xl px-3 py-2 sm:hover:rounded-lg transition-all duration-100 ease-linear;
-  }
-  .first h1 {
-    @apply text-white font-bold tracking-widest lg:text-[13rem] sm:text-9xl xs:text-6xl text-3xl uppercase select-none;
-  }
-  .second h1 {
-    @apply text-gray-800 sm:text-4xl text-2xl font-bold mt-10;
-  }
-  .second p {
-    @apply text-center mx-[15vw] sm:text-base text-sm my-5;
-  }
-  .second button {
-    @apply bg-[#f19a29] text-white sm:text-2xl text-base border-none select-none
+    .socials svg {
+        @apply text-white bg-[#f19a29] rounded-3xl px-3 py-2 sm:hover:rounded-lg transition-all duration-100 ease-linear;
+    }
+    .first h1 {
+        @apply text-white font-bold tracking-widest lg:text-[13rem] sm:text-9xl xs:text-6xl text-3xl uppercase select-none;
+    }
+    .second h1 {
+        @apply text-gray-800 sm:text-4xl text-2xl font-bold mt-10;
+    }
+    .second p {
+        @apply text-center mx-[15vw] sm:text-base text-sm my-5;
+    }
+    .second button {
+        @apply bg-[#f19a29] text-white sm:text-2xl text-base border-none select-none
      py-1 px-4 sm:py-2 sm:px-8 w-32 h-10 sm:w-64 sm:h-14 mb-10;
-  }
-  .third-menu h1 {
-    @apply text-white uppercase tracking-wide font-bold md:text-4xl sm:text-3xl xs:text-base text-sm mt-10;
-  }
-  .third-menu p {
-    @apply text-gray-800 text-center sm:text-base text-xs lg:mx-24 sm:mx-10 mx-4 my-5;
-  }
-  .fourth-menu h1 {
-    @apply text-white uppercase tracking-wide font-bold 
+    }
+    .third-menu h1 {
+        @apply text-white uppercase tracking-wide font-bold md:text-4xl sm:text-3xl xs:text-base text-sm mt-10;
+    }
+    .third-menu p {
+        @apply text-gray-800 text-center sm:text-base text-xs lg:mx-24 sm:mx-10 mx-4 my-5;
+    }
+    .fourth-menu h1 {
+        @apply text-white uppercase tracking-wide font-bold 
      2xl:text-9xl xl:text-8xl lg:text-7xl md:text-6xl sm:text-5xl xs:text-3xl text-base
      md:mb-0 sm:-mb-1 xs:-mb-2 -mb-3;
-  }
-  .fourth-menu button {
-    @apply bg-[#313131] text-white border-none
+    }
+    .fourth-menu button {
+        @apply bg-[#313131] text-white border-none
      2xl:text-xl 2xl:py-[0.9rem] 2xl:px-[9.15rem]
      xl:text-lg xl:py-[0.5rem] xl:px-[6.4rem]
      lg:text-[1rem] lg:py-[0.45rem] lg:px-[4.3rem]
@@ -154,33 +154,33 @@
      sm:text-[0.6rem] sm:py-[0.38rem] sm:px-[3.1rem]
      xs:text-[0.5rem] xs:py-[0.22rem] xs:px-[1.59rem] 
      text-[0.3rem] py-[0.15rem] px-3;
-  }
-  .fifth-card h1 {
-    @apply sm:text-3xl text-2xl font-bold text-center my-12 text-gray-800;
-  }
-  .fifth-card p {
-    @apply text-center sm:text-base xs:text-sm text-sm mb-8 mx-5;
-  }
-  .fifth-card button {
-    @apply bg-[#313131] text-white sm:text-sm xs:text-xs text-[0.5rem] border-none py-3 mx-auto px-12;
-  }
-  .sixth-menu h1 {
-    @apply text-white font-bold uppercase tracking-wide 
+    }
+    .fifth-card h1 {
+        @apply sm:text-3xl text-2xl font-bold text-center my-12 text-gray-800;
+    }
+    .fifth-card p {
+        @apply text-center sm:text-base xs:text-sm text-sm mb-8 mx-5;
+    }
+    .fifth-card button {
+        @apply bg-[#313131] text-white sm:text-sm xs:text-xs text-[0.5rem] border-none py-3 mx-auto px-12;
+    }
+    .sixth-menu h1 {
+        @apply text-white font-bold uppercase tracking-wide 
      2xl:text-9xl lg:text-8xl sm:text-6xl xs:text-4xl text-2xl;
-  }
-  .sixth-menu button {
-    @apply bg-[#f19a29] text-white
+    }
+    .sixth-menu button {
+        @apply bg-[#f19a29] text-white
      2xl:text-2xl lg:text-lg sm:text-base xs:text-[0.7rem] text-[0.6rem]
      2xl:py-4 2xl:px-36 lg:px-28 lg:py-3 sm:px-14 sm:py-2 xs:px-7 xs:py-1 px-3 py-[0.18rem];
-  }
-  .seventh-card-menu p {
-    @apply text-center xl:text-2xl lg:text-xl xs:text-base text-sm mx-2 my-5;
-  }
-  .seventh-card-menu button {
-    @apply bg-[#313131] border-none text-white
+    }
+    .seventh-card-menu p {
+        @apply text-center xl:text-2xl lg:text-xl xs:text-base text-sm mx-2 my-5;
+    }
+    .seventh-card-menu button {
+        @apply bg-[#313131] border-none text-white
      xl:text-xl lg:text-base xs:text-sm text-xs sm:py-3 py-2 sm:px-16 px-8 mb-5;
-  }
-  .reverse .seventh-card-menu button {
-    @apply bg-white text-black;
-  }
+    }
+    .reverse .seventh-card-menu button {
+        @apply bg-white text-black;
+    }
 }

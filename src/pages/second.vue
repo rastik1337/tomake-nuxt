@@ -1,5 +1,5 @@
 <template>
-  <HeaderVue />
-  <SecondPage />
-  <FooterVue />
+    <HeaderVue />
+    <SecondPage />
+    <FooterVue />
 </template>
