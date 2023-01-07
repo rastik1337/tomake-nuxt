@@ -30,6 +30,8 @@
         "@fortawesome/free-regular-svg-icons": "^6.2.1",
         "@fortawesome/free-solid-svg-icons": "^6.2.1",
         "@fortawesome/vue-fontawesome": "^3.0.2",
-        "@nuxtjs/tailwindcss": "^6.2.0"
+        "@nuxtjs/tailwindcss": "^6.2.0",
+        "@pinia/nuxt": "^0.4.6",
+        "pinia": "^2.0.28"
     }
 }

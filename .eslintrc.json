@@ -21,7 +21,6 @@
     },
     "plugins": ["vue", "@typescript-eslint", "prettier"],
     "rules": {
-        "no-unused-vars": "warn",
         "prettier/prettier": [
             "error",
             {

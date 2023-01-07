@@ -3,18 +3,10 @@ module.exports = {
     content: [],
     theme: {
         extend: {
-            // backgroundImage: {
-            //     style: "url('~/assets/imgs/style.jpg')",
-            //     'new-style': "url('~/assets/imgs/new-style.jpg')",
-            //     'new-season': "url('~/assets/imgs/new-season.jpg')",
-            //     'card-1': "url('~/assets/imgs/card-1.jpg')",
-            //     'card-2': "url('~/assets/imgs/card-2.jpg')",
-            //     'card-3': "url('~/assets/imgs/card-3.jpg')",
-            //     fashion: "url('~/assets/imgs/fashion.jpg')",
-            //     'fashion-card-1': "url('~/assets/imgs/fashion-card-1.jpg')",
-            //     'fashion-card-2': "url('~/assets/imgs/fashion-card-2.jpg')",
-            //     'fashion-card-3': "url('~/assets/imgs/fashion-card-3.jpg')",
-            // },
+            animation: {
+                'bounce-once': 'bounce 1s ease-in-out 1.5',
+                'spin-once': 'spin 0.5s ease-in-out 1',
+            },
             screens: {
                 xs: '320px',
             },
