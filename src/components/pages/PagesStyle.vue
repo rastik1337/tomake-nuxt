@@ -1,14 +1,19 @@
 <template>
     <div class="main">
         <!-- FIRST SECTION -->
-        <PagesStyleTitle image-source="~/assets/imgs/style.jpg" text="style" />
+        <PagesStylePageTitle image="style.jpg" text="style" />
         <!-- SECOND SECTION -->
-        <PagesStyleDiscountMessage
+        <PagesStylePageDiscountMessage
             text-heading="UP TO 50%OFF"
             text-message="Lorem ipsum dolor ametconsectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore"
             text-button="SHOP NOW"
         />
         <!-- THIRD SECTION -->
-        <PagesStyleBuySection image="new-style" />
+        <PagesStylePageBuySection
+            image="new-style.jpg"
+            text-heading="new style"
+            text-message="Lorem ipsum dolor consectetuer adipiscing elit, sed diam nonummy nibh"
+            text-button="BUY NOW"
+        />
     </div>
 </template>

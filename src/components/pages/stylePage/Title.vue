@@ -1,6 +1,6 @@
 <script setup lang="ts">
 defineProps({
-    imageSource: {
+    image: {
         type: String,
         required: true,
     },
@@ -12,7 +12,9 @@ defineProps({
 </script>
 <template>
     <div
-        :class="`bg-[url:url('${imageSource}')]`"
+        :style="{
+            backgroundImage: `url('_nuxt/assets/imgs/${image}')`,
+        }"
         class="flex items-center justify-center bg-cover bg-[position:center_80%] bg-no-repeat py-[30%] grayscale 2xl:py-[20%]"
     >
         <h1

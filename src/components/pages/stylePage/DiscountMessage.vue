@@ -8,12 +8,12 @@ defineProps({
     textMessage: {
         type: String,
         required: false,
-        default: 'Default content of the discount message.',
+        default: 'Content of the discount message',
     },
     textButton: {
         type: String,
         required: false,
-        default: 'DISCOUNT REDIRECT',
+        default: 'BUTTON',
     },
 });
 </script>
