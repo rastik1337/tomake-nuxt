@@ -22,28 +22,6 @@
         @apply my-2 flex h-[10vh] flex-col 
      items-center justify-center bg-white py-10 px-[10%] text-black xs:flex-row sm:my-10 sm:flex-row sm:items-baseline;
     }
-    .first {
-        @apply flex items-center justify-center bg-style bg-cover 
-     bg-[position:center_80%] bg-no-repeat py-[30%] grayscale 2xl:py-[20%];
-    }
-    .second {
-        @apply flex flex-col items-center justify-center bg-[#f0f0f0];
-    }
-    .third {
-        @apply flex;
-    }
-    .third-img {
-        @apply w-1/2 bg-new-style bg-cover bg-[position:center_50%] bg-no-repeat py-[20%]
-     grayscale-[50%] xs:w-2/3 lg:bg-[position:center_20%] xl:w-[70%]
-     xl:bg-[position:center_10%];
-    }
-    .third-menu {
-        @apply flex w-1/2 flex-col items-center justify-center bg-[#fd9903] xs:w-1/3 xl:w-[30%];
-    }
-    .btn-buy {
-        @apply mb-10 border-none bg-[#313131] px-5 py-3 text-[0.6rem] 
-     text-white sm:px-12 sm:text-xl md:text-2xl lg:px-14 xl:px-16;
-    }
     .fourth {
         @apply flex;
     }
@@ -56,7 +34,7 @@
      md:left-[5rem] lg:left-[6rem] xl:left-[7.9rem] 2xl:left-[10.5rem];
     }
     .fourth-img {
-        @apply w-3/4 bg-new-season bg-cover bg-[position:center_50%] bg-no-repeat 
+        @apply /*bg-new-season*/ w-3/4 bg-cover bg-[position:center_50%] bg-no-repeat 
      py-[30%] xs:w-2/3 xs:bg-[position:center_0%] 2xl:py-[20%];
     }
     .fifth {
@@ -70,13 +48,13 @@
      bg-[position:top_center] bg-no-repeat xs:mx-16 xs:h-[70vw] sm:mx-6 sm:h-[30vw] md:mx-6 lg:mx-2 xl:h-[30vw] xl:bg-[position:center];
     }
     .fifth-card-img-1 {
-        @apply fifth-card-img bg-card-1 bg-[position:80%_top] xl:bg-[position:80%_center];
+        @apply fifth-card-img /*bg-card-1*/ bg-[position:80%_top] xl:bg-[position:80%_center];
     }
     .fifth-card-img-2 {
-        @apply fifth-card-img bg-card-2;
+        @apply fifth-card-img /*bg-card-2*/;
     }
     .fifth-card-img-3 {
-        @apply fifth-card-img bg-card-3;
+        @apply fifth-card-img /*bg-card-3*/;
     }
     .sixth {
         @apply flex;
@@ -85,7 +63,7 @@
         @apply flex w-2/3 flex-col items-center justify-center bg-[#313131];
     }
     .sixth-img {
-        @apply w-1/3  bg-fashion bg-cover bg-[position:center_top_25%] bg-no-repeat 
+        @apply /*bg-fashion*/  w-1/3 bg-cover bg-[position:center_top_25%] bg-no-repeat 
     py-[30%] 2xl:py-[20%];
     }
     .seventh {
@@ -104,13 +82,13 @@
         @apply w-1/2 bg-cover bg-no-repeat;
     }
     .seventh-card-img-1 {
-        @apply seventh-card-img bg-fashion-card-1 bg-[position:center_top_30%];
+        @apply seventh-card-img /*bg-fashion-card-1*/ bg-[position:center_top_30%];
     }
     .seventh-card-img-2 {
-        @apply seventh-card-img bg-fashion-card-2 bg-[position:top];
+        @apply seventh-card-img /*bg-fashion-card-2*/ bg-[position:top];
     }
     .seventh-card-img-3 {
-        @apply seventh-card-img bg-fashion-card-3 bg-[position:top];
+        @apply seventh-card-img /*bg-fashion-card-3*/ bg-[position:top];
     }
     .reverse {
         @apply flex-row-reverse bg-[#f19a29] text-white;
@@ -121,25 +99,7 @@
     .socials svg {
         @apply rounded-3xl bg-[#f19a29] px-3 py-2 text-white transition-all duration-100 ease-linear sm:hover:rounded-lg;
     }
-    .first h1 {
-        @apply select-none text-3xl font-bold uppercase tracking-widest text-white xs:text-6xl sm:text-9xl lg:text-[13rem];
-    }
-    .second h1 {
-        @apply mt-10 text-2xl font-bold text-gray-800 sm:text-4xl;
-    }
-    .second p {
-        @apply mx-[15vw] my-5 text-center text-sm sm:text-base;
-    }
-    .second button {
-        @apply mb-10 h-10 w-32 select-none border-none bg-[#f19a29]
-     py-1 px-4 text-base text-white sm:h-14 sm:w-64 sm:py-2 sm:px-8 sm:text-2xl;
-    }
-    .third-menu h1 {
-        @apply mt-10 text-sm font-bold uppercase tracking-wide text-white xs:text-base sm:text-3xl md:text-4xl;
-    }
-    .third-menu p {
-        @apply mx-4 my-5 text-center text-xs text-gray-800 sm:mx-10 sm:text-base lg:mx-24;
-    }
+
     .fourth-menu h1 {
         @apply -mb-3 text-base font-bold uppercase 
      tracking-wide text-white xs:-mb-2 xs:text-3xl sm:-mb-1 sm:text-5xl md:mb-0

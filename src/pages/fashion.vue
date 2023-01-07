@@ -1,3 +1,3 @@
 <template>
-    <PagesStyle />
+    <PagesFashion />
 </template>

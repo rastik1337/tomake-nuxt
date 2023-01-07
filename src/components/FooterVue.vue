@@ -18,13 +18,13 @@ onMounted(() => {
     <div class="footer">
         <h1 class="text-lg font-bold sm:text-xl">FOLLOW ALONG WITH US</h1>
         <div class="socials">
-            <NuxtLink :to="path">
+            <NuxtLink to="#">
                 <font-awesome-icon icon="fa-brands fa-facebook-f" size="2xl" />
             </NuxtLink>
-            <NuxtLink :to="path">
+            <NuxtLink to="#">
                 <font-awesome-icon icon="fa-brands fa-instagram" size="2xl" />
             </NuxtLink>
-            <NuxtLink :to="path">
+            <NuxtLink to="#">
                 <font-awesome-icon icon="fa-brands fa-twitter" size="2xl" />
             </NuxtLink>
         </div>
