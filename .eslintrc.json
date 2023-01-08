@@ -20,12 +20,7 @@
         "sourceType": "module",
         "parser": "@typescript-eslint/parser"
     },
-    "plugins": [
-        "vue",
-        "@typescript-eslint",
-        "prettier",
-        "tailwindcss"
-    ],
+    "plugins": ["vue", "@typescript-eslint", "prettier", "tailwindcss"],
     "rules": {
         "prettier/prettier": [
             "error",
