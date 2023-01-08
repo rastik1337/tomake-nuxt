@@ -22,7 +22,7 @@ defineProps({
     <div class="mx-10 my-16 flex flex-col sm:mx-5 xl:mx-10 2xl:mx-20">
         <img
             :src="`_nuxt/assets/imgs/${image}`"
-            class="object-cover transition-all ease-in-out sm:h-[30vw]"
+            class="object-cover sm:h-[30vw]"
         />
         <h1
             class="my-12 text-center text-2xl font-bold text-gray-800 transition-all ease-in-out sm:text-3xl"

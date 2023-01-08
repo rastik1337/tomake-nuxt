@@ -4,14 +4,10 @@ module.exports = {
     theme: {
         extend: {
             animation: {
-                'bounce-once': 'bounce 1s ease-in-out 1.5',
-                'spin-once': 'spin 0.5s ease-in-out 1',
+                'bounce-once': 'bounce 1s ease-in-out 2.5',
             },
             screens: {
                 xs: '320px',
-            },
-            fontFamily: {
-                custom: ['"Josefin Sans""', 'sans-serif'],
             },
         },
     },

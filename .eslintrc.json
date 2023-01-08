@@ -11,7 +11,8 @@
         "plugin:prettier/recommended",
         "plugin:vue/vue3-recommended",
         "plugin:@typescript-eslint/recommended",
-        "prettier"
+        "prettier",
+        "plugin:tailwindcss/recommended"
     ],
     "parser": "vue-eslint-parser",
     "parserOptions": {
@@ -19,7 +20,12 @@
         "sourceType": "module",
         "parser": "@typescript-eslint/parser"
     },
-    "plugins": ["vue", "@typescript-eslint", "prettier"],
+    "plugins": [
+        "vue",
+        "@typescript-eslint",
+        "prettier",
+        "tailwindcss"
+    ],
     "rules": {
         "prettier/prettier": [
             "error",

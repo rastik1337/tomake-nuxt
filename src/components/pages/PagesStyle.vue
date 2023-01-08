@@ -1,5 +1,5 @@
 <template>
-    <div class="main">
+    <div>
         <!-- FIRST SECTION -->
         <PagesStylePageTitle image="style.jpg" text="style" />
         <!-- SECOND SECTION -->

@@ -9,37 +9,46 @@ import { ref } from 'vue';
 
 library.add(faFacebookF, faInstagram, faTwitter);
 
-const path = ref('');
-onMounted(() => {
-    path.value = window.location.pathname;
-});
+const iconSize = ref('2xl');
 
 const icons = [
     {
         id: 0,
         name: 'fa-brands fa-facebook-f',
         link: '#',
+        iconSize: iconSize.value,
     },
     {
         id: 1,
         name: 'fa-brands fa-instagram',
         link: '#',
+        iconSize: iconSize.value,
     },
     {
         id: 2,
         name: 'fa-brands fa-twitter',
         link: '#',
+        iconSize: iconSize.value,
     },
 ];
 </script>
 <template>
-    <div class="footer">
+    <div
+        class="m-[5vh] flex flex-col items-center justify-center text-center text-gray-800"
+    >
         <h1 class="text-lg font-bold transition-all ease-in-out sm:text-xl">
             FOLLOW ALONG WITH US
         </h1>
-        <div class="socials transition-all ease-in-out">
-            <NuxtLink v-for="icon in icons" :key="icon.id" :to="icon.link">
-                <font-awesome-icon :icon="icon.name" size="2xl" />
+        <div
+            class="my-5 flex flex-col space-y-2 transition-all ease-in-out xs:flex-row xs:space-x-5 xs:space-y-0"
+        >
+            <NuxtLink
+                v-for="icon in icons"
+                :key="icon.id"
+                :to="icon.link"
+                class="rounded-3xl bg-[#f19a29] px-3 py-2 text-white transition-all duration-100 ease-linear sm:hover:rounded-lg"
+            >
+                <font-awesome-icon :icon="icon.name" :size="icon.iconSize" />
             </NuxtLink>
         </div>
         <p

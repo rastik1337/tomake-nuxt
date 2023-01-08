@@ -13,4 +13,9 @@ export default defineNuxtConfig({
         cssPath: '~/assets/main.css',
         configPath: 'tailwind.config.js',
     },
+    app: {
+        head: {
+            title: 'TOMAKE NUXT3',
+        },
+    },
 });

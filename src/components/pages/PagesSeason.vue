@@ -27,7 +27,7 @@ const cards = [
 ];
 </script>
 <template>
-    <div class="main transition-all ease-in-out">
+    <div class="transition-all ease-in-out">
         <!-- FIRST SECTION -->
         <PagesSeasonPageTitle
             image="new-season.jpg"

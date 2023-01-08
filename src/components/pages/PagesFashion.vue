@@ -1,46 +1,46 @@
+<script setup lang="ts">
+const cards = [
+    {
+        id: 0,
+        image: 'fashion-card-1.jpg',
+        textMessage:
+            'Lorem ipsum dolor consectetuer adipiscing elit, sed diam nonummy nibh',
+        textButton: 'BUY NOW',
+    },
+    {
+        id: 1,
+        image: 'fashion-card-2.jpg',
+        textMessage:
+            'Lorem ipsum dolor consectetuer adipiscing elit, sed diam nonummy nibh',
+        textButton: 'BUY NOW',
+    },
+    {
+        id: 2,
+        image: 'fashion-card-3.jpg',
+        textMessage:
+            'Lorem ipsum dolor consectetuer adipiscing elit, sed diam nonummy nibh',
+        textButton: 'BUY NOW',
+    },
+];
+</script>
 <template>
-    <div class="main">
-        <div class="sixth">
-            <div class="sixth-menu">
-                <div class="sixth-menu-grp">
-                    <h1>fashion</h1>
-                    <button>SHOP NOW</button>
-                </div>
-            </div>
-            <div class="sixth-img"></div>
-        </div>
-
-        <div class="seventh">
-            <div class="seventh-card">
-                <div class="seventh-card-img-1"></div>
-                <div class="seventh-card-menu">
-                    <p>
-                        Lorem ipsum dolor consectetuer adipiscing elit, sed diam
-                        nonummy nibh
-                    </p>
-                    <button>BUY NOW</button>
-                </div>
-            </div>
-            <div class="seventh-card reverse">
-                <div class="seventh-card-img-2"></div>
-                <div class="seventh-card-menu">
-                    <p>
-                        Lorem ipsum dolor consectetuer adipiscing elit, sed diam
-                        nonummy nibh
-                    </p>
-                    <button>BUY NOW</button>
-                </div>
-            </div>
-            <div class="seventh-card">
-                <div class="seventh-card-img-3"></div>
-                <div class="seventh-card-menu">
-                    <p>
-                        Lorem ipsum dolor consectetuer adipiscing elit, sed diam
-                        nonummy nibh
-                    </p>
-                    <button>BUY NOW</button>
-                </div>
-            </div>
+    <div>
+        <!-- FIRST SECTION -->
+        <PagesFashionPageTitle
+            image="fashion.jpg"
+            text-heading="fashion"
+            text-button="SHOP NOW"
+        />
+        <!-- SECOND SECTION -->
+        <div class="flex flex-col items-center justify-center bg-[#f0f0f0]">
+            <PagesFashionPageCard
+                v-for="card in cards"
+                :key="card.id"
+                :image="card.image"
+                :text-message="card.textMessage"
+                :text-button="card.textButton"
+                class="reversed"
+            />
         </div>
     </div>
 </template>
