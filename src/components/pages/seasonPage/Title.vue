@@ -6,11 +6,13 @@ defineProps({
     },
     textHeading: {
         type: String,
-        required: true,
+        required: false,
+        default: 'untitled',
     },
     textButton: {
         type: String,
-        required: true,
+        required: false,
+        default: 'BUTTON',
     },
 });
 </script>

@@ -6,17 +6,17 @@ defineProps({
     },
     textHeading: {
         type: String,
-        required: true,
-        default: 'Heading',
+        required: false,
+        default: 'title',
     },
     textMessage: {
         type: String,
-        required: true,
+        required: false,
         default: 'Content of the message for this',
     },
     textButton: {
         type: String,
-        required: true,
+        required: false,
         default: 'BUTTON',
     },
 });

@@ -6,11 +6,13 @@ defineProps({
     },
     textMessage: {
         type: String,
-        required: true,
+        required: false,
+        default: 'Some card text...',
     },
     textButton: {
         type: String,
-        required: true,
+        required: false,
+        default: 'BUTTON',
     },
 });
 </script>
@@ -29,7 +31,7 @@ defineProps({
                 {{ textMessage }}
             </p>
             <button
-                class="mb-5 border-none bg-[#313131] py-2 px-8 text-xs text-white xs:text-sm sm:py-3 sm:px-16 lg:text-base xl:text-xl"
+                class="mb-5 border-none bg-[#313131] py-2 px-8 text-xs text-white transition-all ease-in-out xs:text-sm sm:py-3 sm:px-16 lg:text-base xl:text-xl"
             >
                 {{ textButton }}
             </button>

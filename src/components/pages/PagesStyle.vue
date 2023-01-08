@@ -1,19 +1,24 @@
+<script setup lang="ts">
+import { useStore } from '@/stores/index';
+
+const { title, discountMessage, buySection } = useStore().stylePage;
+</script>
 <template>
     <div>
         <!-- FIRST SECTION -->
-        <PagesStylePageTitle image="style.jpg" text="style" />
+        <PagesStylePageTitle :image="title.image" :text="title.text" />
         <!-- SECOND SECTION -->
         <PagesStylePageDiscountMessage
-            text-heading="UP TO 50%OFF"
-            text-message="Lorem ipsum dolor ametconsectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore"
-            text-button="SHOP NOW"
+            :text-heading="discountMessage.heading"
+            :text-message="discountMessage.message"
+            :text-button="discountMessage.buttonText"
         />
         <!-- THIRD SECTION -->
         <PagesStylePageBuySection
-            image="new-style.jpg"
-            text-heading="new style"
-            text-message="Lorem ipsum dolor consectetuer adipiscing elit, sed diam nonummy nibh"
-            text-button="BUY NOW"
+            :image="buySection.image"
+            :text-heading="buySection.heading"
+            :text-message="buySection.message"
+            :text-button="buySection.buttonText"
         />
     </div>
 </template>

@@ -6,23 +6,26 @@ defineProps({
     },
     textHeading: {
         type: String,
-        required: true,
+        required: false,
+        default: 'Card Title',
     },
     textMessage: {
         type: String,
-        required: true,
+        required: false,
+        default: 'Some card text...',
     },
     textButton: {
         type: String,
-        required: true,
+        required: false,
+        default: 'BUTTON',
     },
 });
 </script>
 <template>
-    <div class="mx-10 my-16 flex flex-col sm:mx-5 xl:mx-10 2xl:mx-20">
+    <div class="mx-10 my-16 flex flex-col sm:mx-5 xl:mx-10 2xl:mx-16">
         <img
             :src="`_nuxt/assets/imgs/${image}`"
-            class="object-cover sm:h-[30vw]"
+            class="h-fit w-full object-cover"
         />
         <h1
             class="my-12 text-center text-2xl font-bold text-gray-800 transition-all ease-in-out sm:text-3xl"

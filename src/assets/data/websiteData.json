@@ -1,0 +1,121 @@
+{
+    "stylePage": {
+        "title": {
+            "image": "style.jpg",
+            "text": "style"
+        },
+        "discountMessage": {
+            "heading": "UP TO 50%OFF",
+            "message": "Lorem ipsum dolor ametconsectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore",
+            "buttonText": "SHOP NOW"
+        },
+        "buySection": {
+            "image": "new-style.jpg",
+            "heading": "new style",
+            "message": "Lorem ipsum dolor consectetuer adipiscing elit, sed diam nonummy nibh",
+            "buttonText": "BUY NOW"
+        }
+    },
+    "seasonPage": {
+        "title": {
+            "image": "new-season.jpg",
+            "heading": "new season",
+            "buttonText": "SHOP NOW"
+        },
+        "cards": [
+            {
+                "id": 0,
+                "image": "card-1.jpg",
+                "heading": "$50",
+                "message": "Lorem ipsum dolor consectetuer adipiscing diam nonummy nibh",
+                "buttonText": "BUY NOW"
+            },
+            {
+                "id": 1,
+                "image": "card-2.jpg",
+                "heading": "$50",
+                "message": "Lorem ipsum dolor consectetuer adipiscing diam nonummy nibh",
+                "buttonText": "BUY NOW"
+            },
+            {
+                "id": 2,
+                "image": "card-3.jpg",
+                "heading": "$50",
+                "message": "Lorem ipsum dolor consectetuer adipiscing diam nonummy nibh",
+                "buttonText": "BUY NOW"
+            }
+        ]
+    },
+    "fashionPage": {
+        "title": {
+            "image": "fashion.jpg",
+            "heading": "fashion",
+            "buttonText": "SHOP NOW"
+        },
+        "cards": [
+            {
+                "id": 0,
+                "image": "fashion-card-1.jpg",
+                "message": "Lorem ipsum dolor consectetuer adipiscing elit, sed diam nonummy nibh",
+                "buttonText": "BUY NOW"
+            },
+            {
+                "id": 1,
+                "image": "fashion-card-2.jpg",
+                "message": "Lorem ipsum dolor consectetuer adipiscing elit, sed diam nonummy nibh",
+                "buttonText": "BUY NOW"
+            },
+            {
+                "id": 2,
+                "image": "fashion-card-3.jpg",
+                "message": "Lorem ipsum dolor consectetuer adipiscing elit, sed diam nonummy nibh",
+                "buttonText": "BUY NOW"
+            }
+        ]
+    },
+    "header": {
+        "links": [
+            {
+                "id": 0,
+                "text": "STYLE",
+                "path": "/"
+            },
+            {
+                "id": 1,
+                "text": "NEW SEASON",
+                "path": "/season"
+            },
+            {
+                "id": 2,
+                "text": "FASHION",
+                "path": "/fashion"
+            }
+        ],
+        "logoPath": "_nuxt/assets/imgs/logo.png",
+        "buttonText": "LOGIN"
+    },
+    "footer": {
+        "icons": [
+            {
+                "id": 0,
+                "name": "fa-brands fa-facebook-f",
+                "link": "#",
+                "iconSize": "2xl"
+            },
+            {
+                "id": 1,
+                "name": "fa-brands fa-instagram",
+                "link": "#",
+                "iconSize": "2xl"
+            },
+            {
+                "id": 2,
+                "name": "fa-brands fa-twitter",
+                "link": "#",
+                "iconSize": "2xl"
+            }
+        ],
+        "text": "Lorem ipsum dolor ametconsectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore",
+        "title": "FOLLOW ALONG WITH US"
+    }
+}

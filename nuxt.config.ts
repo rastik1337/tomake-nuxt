@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
     modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt'],
     srcDir: 'src/',
-    css: ['@fortawesome/fontawesome-svg-core/styles.css', '~/assets/main.css'],
+    css: ['@fortawesome/fontawesome-svg-core/styles.css', '@/assets/main.css'],
     build: {
         transpile: ['@fortawesome/vue-fontawesome'],
     },
@@ -16,6 +16,13 @@ export default defineNuxtConfig({
     app: {
         head: {
             title: 'TOMAKE NUXT3',
+            link: [
+                {
+                    rel: 'icon',
+                    type: 'image/x-icon',
+                    href: '/favicon.ico',
+                },
+            ],
         },
     },
 });
