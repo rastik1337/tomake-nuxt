@@ -19,7 +19,7 @@ defineProps({
 <template>
     <div class="flex">
         <div
-            class="flex w-1/4 flex-col items-end justify-center bg-[#fd9903] xs:w-1/3"
+            class="flex w-1/3 flex-col items-end justify-center bg-[#fd9903] py-[30%] 2xl:py-[20%]"
         >
             <div
                 class="relative left-[1.3rem] xs:left-[2.5rem] sm:left-[4rem] md:left-[5rem] lg:left-[6rem] xl:left-[7.9rem] 2xl:left-[10.5rem]"
@@ -43,9 +43,6 @@ defineProps({
             </div>
         </div>
 
-        <img
-            :src="`_nuxt/assets/imgs/${image}`"
-            class="w-3/4 object-cover xs:w-2/3"
-        />
+        <img :src="`_nuxt/assets/imgs/${image}`" class="w-2/3 object-cover" />
     </div>
 </template>

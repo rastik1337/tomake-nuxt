@@ -19,7 +19,7 @@ defineProps({
 <template>
     <div class="flex">
         <div
-            class="flex w-2/3 flex-col items-center justify-center bg-[#313131]"
+            class="flex w-2/3 flex-col items-center justify-center bg-[#313131] py-[30%] 2xl:py-[20%]"
         >
             <div>
                 <h1
@@ -34,6 +34,6 @@ defineProps({
                 </button>
             </div>
         </div>
-        <img :src="`_nuxt/assets/imgs/${image}`" class="w-1/3" />
+        <img :src="`_nuxt/assets/imgs/${image}`" class="w-1/3 object-cover" />
     </div>
 </template>
