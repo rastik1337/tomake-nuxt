@@ -92,7 +92,11 @@
             }
         ],
         "logoPath": "_nuxt/assets/imgs/logo.png",
-        "buttonText": "LOGIN"
+        "buttonText": "LOGIN",
+        "loginModal": {
+            "placeholderUsername": "i.e: Alice Smith",
+            "placeholderPassword": "secret passphrase"
+        }
     },
     "footer": {
         "icons": [
@@ -117,5 +121,8 @@
         ],
         "text": "Lorem ipsum dolor ametconsectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore",
         "title": "FOLLOW ALONG WITH US"
+    },
+    "user": {
+        "username": "John Doe"
     }
 }

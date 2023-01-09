@@ -8,5 +8,6 @@ export const useStore = defineStore('globalStore', {
         fashionPage: data.fashionPage,
         header: data.header,
         footer: data.footer,
+        user: data.user,
     }),
 });

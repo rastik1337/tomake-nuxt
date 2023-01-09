@@ -1,8 +1,13 @@
 <script setup lang="ts">
 import { useStore } from '@/stores/index';
-const { header } = useStore();
+const { header, user } = useStore();
 
 const showModal = ref(false);
+
+const toggleModal = () => {
+    showModal.value = !showModal.value;
+    document.body.style.overflow = showModal.value ? 'hidden' : 'auto';
+};
 </script>
 <template>
     <div
@@ -29,7 +34,7 @@ const showModal = ref(false);
         </div>
         <button
             class="flex-[0.5] rounded-xl bg-green-700 p-3 font-mono tracking-tight text-white duration-500 ease-in-out sm:hover:flex-[1] sm:hover:bg-green-900 sm:hover:tracking-widest"
-            @click="showModal = true"
+            @click="toggleModal"
         >
             {{ header.buttonText }}
         </button>
@@ -37,33 +42,42 @@ const showModal = ref(false);
 
     <div class="h-5 w-[100%] bg-[#f0f0f0] sm:h-[5vh]"></div>
 
-    <Teleport to="#modal-container">
+    <Teleport v-if="showModal" to="#modal-container">
         <div
-            v-if="showModal"
-            class="fixed top-0 left-0 z-50 flex h-full w-full flex-col items-center justify-center bg-black/50"
+            class="fixed inset-0 z-[999] flex items-center justify-center bg-black/75"
         >
-            <div class="flex flex-col text-center">
-                <h1 class="m-5 text-3xl text-white">Login</h1>
-                <div class="flex flex-col">
-                    <input class="my-2" type="text" placeholder="Username" />
+            <div
+                class="relative m-4 flex w-full max-w-lg items-center justify-center rounded-3xl bg-white/90 shadow-lg"
+            >
+                <div class="flex flex-col items-center justify-center p-4">
+                    <h1 class="text-center text-2xl font-bold">
+                        Welcome back, <br />
+                        <span class="text-green-600">{{ user.username }}</span
+                        >!
+                    </h1>
                     <input
-                        class="my-2"
-                        type="password"
-                        placeholder="Password"
+                        type="text"
+                        class="mt-4 rounded-lg border-2 border-black bg-gray-200 p-2 placeholder:text-black/70"
+                        :placeholder="header.loginModal.placeholderUsername"
                     />
-                </div>
-                <div class="m-5 flex flex-row">
-                    <button
-                        class="mx-5 rounded-lg bg-green-600 px-6 py-3 uppercase text-black transition-all duration-300 ease-in-out sm:hover:bg-green-800"
-                    >
-                        SUBMIT
-                    </button>
-                    <button
-                        class="rounded-lg bg-red-500 px-6 py-3 uppercase text-black transition-all duration-300 ease-in-out sm:hover:bg-red-700"
-                        @click="showModal = false"
-                    >
-                        cancel
-                    </button>
+                    <input
+                        type="password"
+                        class="mt-4 rounded-lg border-2 border-black bg-gray-200 p-2 placeholder:text-black/70"
+                        :placeholder="header.loginModal.placeholderPassword"
+                    />
+                    <div class="flex flex-row space-x-5">
+                        <button
+                            class="mt-4 rounded-lg bg-green-700 px-4 py-2 text-sm uppercase text-white"
+                        >
+                            login
+                        </button>
+                        <button
+                            class="mt-4 rounded-lg bg-red-700 px-4 py-2 text-sm uppercase text-white"
+                            @click="toggleModal"
+                        >
+                            cancel
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
