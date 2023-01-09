@@ -17,14 +17,17 @@ defineProps({
 });
 </script>
 <template>
-    <div class="m-5 flex bg-white">
+    <div class="m-10 flex h-[30rem] w-[75vw] flex-col bg-white sm:flex-row">
+        <div class="h-1/2 sm:h-auto sm:w-1/2">
+            <img
+                :src="`_nuxt/assets/imgs/${image}`"
+                alt=""
+                class="h-full w-full object-cover object-[center_20%]"
+            />
+        </div>
         <div
-            :style="{
-                backgroundImage: `url('_nuxt/assets/imgs/${image}')`,
-            }"
-            class="w-1/2 bg-cover bg-[position:center_top_25%] bg-no-repeat"
-        />
-        <div class="flex w-1/2 flex-col items-center justify-center p-[6%]">
+            class="flex h-1/2 flex-col items-center justify-center p-[6%] sm:h-auto sm:w-1/2"
+        >
             <p
                 class="mx-2 my-5 text-center text-sm xs:text-base lg:text-xl xl:text-2xl"
             >

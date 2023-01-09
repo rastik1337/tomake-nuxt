@@ -13,9 +13,9 @@
 
 @layer utilities {
     .reversed:nth-child(even) {
-        @apply flex-row-reverse bg-[#f19a29] text-white;
+        @apply flex-col bg-[#f19a29] text-white sm:flex-row-reverse;
     }
     .reversed:nth-child(even) button {
-        @apply flex-row-reverse bg-white text-black;
+        @apply flex-col bg-white text-black sm:flex-row-reverse;
     }
 }
