@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt'],
+    modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt', '@nuxtjs/apollo'],
     srcDir: 'src/',
     css: ['@fortawesome/fontawesome-svg-core/styles.css', '@/assets/main.css'],
     build: {
@@ -23,6 +23,14 @@ export default defineNuxtConfig({
                     href: '/favicon.ico',
                 },
             ],
+        },
+    },
+    apollo: {
+        clients: {
+            default: {
+                httpEndpoint:
+                    'https://trainee-server-production.up.railway.app/',
+            },
         },
     },
 });

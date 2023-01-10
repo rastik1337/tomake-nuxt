@@ -2,7 +2,8 @@
 defineProps({
     image: {
         type: String,
-        required: true,
+        required: false,
+        default: 'card-1.jpg',
     },
     textHeading: {
         type: String,
@@ -22,23 +23,20 @@ defineProps({
 });
 </script>
 <template>
-    <div class="mx-10 my-16 flex flex-col sm:mx-5 xl:mx-10 2xl:mx-16">
-        <img
-            :src="`_nuxt/assets/imgs/${image}`"
-            class="h-fit w-full object-cover"
-        />
+    <div class="m-10 flex w-96 flex-col">
+        <img :src="`_nuxt/assets/imgs/${image}`" class="h-auto max-w-full" />
         <h1
             class="my-12 text-center text-2xl font-bold text-gray-800 transition-all ease-in-out sm:text-3xl"
         >
             {{ textHeading }}
         </h1>
         <p
-            class="mx-5 mb-8 text-center text-sm transition-all ease-in-out xs:text-sm sm:text-base"
+            class="mb-8 text-center text-sm transition-all ease-in-out xs:text-sm sm:text-base"
         >
             {{ textMessage }}
         </p>
         <button
-            class="mx-auto border-none bg-[#313131] py-3 px-12 text-[0.5rem] text-white transition-all ease-in-out xs:text-xs sm:text-sm"
+            class="mx-auto border-none bg-[#313131] py-3 px-12 text-[0.5rem] uppercase text-white transition-all ease-in-out xs:text-xs sm:text-sm"
         >
             {{ textButton }}
         </button>
