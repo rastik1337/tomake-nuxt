@@ -1,28 +1,9 @@
 <script setup lang="ts">
 import { useStore } from '@/stores/index';
+import useGetCards from '@/composables/queries/useGetCards';
 const { cards, title } = useStore().seasonPage;
 
-type CardsQuery = {
-    cards: {
-        id: number;
-        price: number;
-        button: string;
-        description: string;
-    }[];
-};
-
-const query = gql`
-    query getCards {
-        cards {
-            id
-            price
-            button
-            description
-        }
-    }
-`;
-const { data } = useAsyncQuery<CardsQuery>(query);
-const fetchedCards = data.value?.cards;
+const fetchedCards = await useGetCards();
 </script>
 <template>
     <div class="transition-all ease-in-out">

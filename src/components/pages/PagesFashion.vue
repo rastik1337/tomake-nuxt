@@ -1,7 +1,10 @@
 <script setup lang="ts">
 import { useStore } from '@/stores/index';
+import useGetCards from '@/composables/queries/useGetCards';
 
 const { cards, title } = useStore().fashionPage;
+
+const fetchedCards = await useGetCards();
 </script>
 <template>
     <div>
@@ -19,6 +22,14 @@ const { cards, title } = useStore().fashionPage;
                 :image="card.image"
                 :text-message="card.message"
                 :text-button="card.buttonText"
+                class="reversed"
+            />
+            <!-- FETCHED CARDS -->
+            <PagesFashionPageCard
+                v-for="card in fetchedCards"
+                :key="card.id"
+                :text-message="card.description"
+                :text-button="card.button"
                 class="reversed"
             />
         </div>
